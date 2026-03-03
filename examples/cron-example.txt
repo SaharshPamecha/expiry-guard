@@ -1,0 +1,11 @@
+# Daily cron job example for expiry-guard
+# Save this file as /etc/cron.d/expiry-guard
+
+# Run audit every morning at 9 AM and email security team
+0 9 * * * root /usr/local/bin/expiry-guard alert --days=7 2>&1 | mail -s "Daily Account Expiry Alert" security@company.com
+
+# Generate weekly compliance report every Monday
+0 10 * * 1 root /usr/local/bin/expiry-guard report --format=html --output=/var/www/reports/expiry-report-$(date +\%Y\%m\%d).html
+
+# Alternative: Log to file instead of email
+# 0 9 * * * root /usr/local/bin/expiry-guard alert --days=7 >> /var/log/expiry-guard.log 2>&1
