@@ -1,0 +1,31 @@
+🔐 Day 2/100: Temporary User Access Is a Compliance Nightmare. Here's How I Fixed It.
+
+Every production environment has them—contractors, consultants, temp developers. They all need accounts, but those accounts should expire when the work ends.
+
+Six months later, your /etc/passwd is littered with stale accounts, and your security auditor is asking uncomfortable questions.
+
+I built expiry-guard to solve this: a single Bash CLI that creates, audits, and alerts on temporary Linux user accounts.
+
+The four commands every security team needs:
+
+→ create — Make a user with automatic expiry
+curl -sL ... | sudo bash
+sudo expiry-guard create contractor-ux 2025-06-30
+
+→ audit — See all temporary accounts with days remaining
+sudo expiry-guard audit
+
+→ alert — Get notified before accounts expire  
+sudo expiry-guard alert --days=7
+
+→ report — Generate HTML/JSON/CSV for auditors
+sudo expiry-guard report --format=html
+
+Zero dependencies. Works on any Linux distro. MIT licensed.
+
+Interactive demo: https://expiry-guard-pi.vercel.app
+Source code: https://github.com/SaharshPamecha/expiry-guard
+
+This is part of my 100-day open-source DevOps journey. Follow along for daily tools and lessons.
+
+#DevOps #Linux #Security #Compliance #OpenSource #100DaysOfDevOps

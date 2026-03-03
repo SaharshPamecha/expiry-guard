@@ -1,0 +1,62 @@
+Tweet 1/5
+───
+Day 2/100 of building open-source DevOps tools:
+
+Temporary Linux user accounts are a compliance nightmare.
+
+Contractors need access. You create accounts. Six months later, stale accounts pile up and auditors ask uncomfortable questions.
+
+I built expiry-guard to fix this.
+
+🧵
+
+Tweet 2/5
+───
+expiry-guard is a single Bash CLI for managing temporary user accounts:
+
+→ create — Users with automatic expiry
+→ audit — See all temp accounts with days remaining  
+→ alert — Get notified before expiry
+→ report — Generate compliance reports (HTML/JSON/CSV)
+
+Zero dependencies. Any Linux distro.
+
+Tweet 3/5
+───
+Usage example:
+
+$ sudo expiry-guard create contractor-ux 2025-06-30
+[✓] User created with expiry: 2025-06-30
+
+$ sudo expiry-guard audit
+USERNAME       EXPIRES      DAYS
+contractor-ux  2025-06-30   117 ✓
+temp-dev       2025-03-15   -5 ✗ EXPIRED
+
+Colorized output. Machine-parseable. Built for production.
+
+Tweet 4/5
+───
+Interactive web demo:
+https://expiry-guard-pi.vercel.app
+
+Try all commands in your browser before installing. No setup required.
+
+Source code (MIT):
+https://github.com/SaharshPamecha/expiry-guard
+
+Install with one line:
+curl -sL ... | sudo bash
+
+Tweet 5/5
+───
+Built this as part of my 100-day open-source DevOps journey.
+
+Day 1: userctl (service account auditor)
+Day 2: expiry-guard (temp user lifecycle)
+
+Tomorrow: container security scanning
+
+Follow @SaharshPamecha1 for daily tools.
+
+#DevOps #Linux #Security #100DaysOfDevOps

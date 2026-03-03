@@ -118,7 +118,7 @@ sudo expiry-guard report --format=csv > accounts.csv
 
 Try expiry-guard directly in your browser — no install needed:
 
-**[Launch Interactive Demo →](https://expiry-guard.vercel.app)**
+**[Launch Interactive Demo: https://expiry-guard-pi.vercel.app](https://expiry-guard-pi.vercel.app)**
 
 The web simulator lets you run all expiry-guard commands against a simulated user database.
 
