@@ -55,8 +55,8 @@ Built this as part of my 100-day open-source DevOps journey.
 Day 1: userctl (service account auditor)
 Day 2: expiry-guard (temp user lifecycle)
 
-Tomorrow: container security scanning
+More tools coming daily.
 
-Follow @SaharshPamecha1 for daily tools.
+Follow @SaharshPamecha1 for the journey.
 
 #DevOps #Linux #Security #100DaysOfDevOps

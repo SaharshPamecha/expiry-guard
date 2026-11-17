@@ -121,10 +121,10 @@ The project includes:
 
 ## What's Next
 
-Two tools down, more to come. Tomorrow I'm looking at container security scanning—likely Trivy or Grype integration with CI/CD pipelines. If you have specific DevOps pain points you'd like to see addressed, drop a comment.
+Two tools down, more to come. Follow along for daily open-source DevOps tools. If you have specific infrastructure pain points you'd like to see addressed, drop a comment.
 
 ---
 
 **About the Author**
 
-Saharsh Pamecha is a Staff Engineer exploring the intersection of infrastructure automation and security. This post is part of a 100-day open-source DevOps journey. Follow on [X @SaharshPamecha1](https://x.com/SaharshPamecha1) and [LinkedIn](https://www.linkedin.com/in/saharsh-pamecha-6219961b7/) for daily updates.
+Saharsh Pamecha is a Staff Engineer exploring the intersection of DevOps, Data, AI and infrastructure automation and security. This post is part of a 100-day open-source DevOps journey. Follow on [X @SaharshPamecha1](https://x.com/SaharshPamecha1) and [LinkedIn](https://www.linkedin.com/in/saharsh-pamecha-6219961b7/) for daily updates.
